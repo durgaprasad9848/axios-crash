@@ -213,3 +213,30 @@ document
   .addEventListener('click', transformResponse);
 document.getElementById('error').addEventListener('click', errorHandling);
 document.getElementById('cancel').addEventListener('click', cancelToken);
+
+
+
+
+
+
+
+
+
+
+
+const editingExpId = null;
+
+handlesubmit() {
+// taking all values from inputs
+
+if (editingExpId === null) {
+axios.post('url', obj)
+} else {
+axios.put(`url/${editingExpId}`, obj)
+editingExpId = null;
+}
+}
+
+edit() {
+editingExpId = data.id;
+}
