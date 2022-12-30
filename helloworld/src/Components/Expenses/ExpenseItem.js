@@ -1,21 +1,22 @@
-import './ExpenceItem.css';
+import './ExpenseItem.css';
  
-import ExpenseDate from './ExpenceDate.js';
+import ExpenseDate from './ExpenseDate.js';
 import ExpenseDetails from './ExpenseDetails.js';
+import Card from '../UI/Card.js';
 
-function ExpenceItem(props) {
+const ExpenseItem=(props)=> {
   
  
  
   return (
-    <div className = "expense-item">
+    <Card className = "expense-item">
         <div>
         <ExpenseDate date = {props.date}></ExpenseDate>
         </div>
        
         <ExpenseDetails title = {props.title} amount = {props.amount}></ExpenseDetails>
        
-    </div>);
+    </Card>);
 }
 
-export default ExpenceItem;
+export default ExpenseItem;

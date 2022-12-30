@@ -1,5 +1,5 @@
-import './ExpenceItem.css';
-function ExpenseDetails(props)
+import './ExpenseItem.css';
+const ExpenseDetails=(props)=>
 {
 
     return (<div className="expense-item__description">
