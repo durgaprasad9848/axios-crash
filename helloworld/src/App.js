@@ -30,22 +30,29 @@ const App=()=> {
       location: 'Guntur',
     },
   ];
+  
+  
 
 
   return (
     <Card>
     <div className="App">
       <header className="App-header">
+       
         
         <>{
+
+ 
            expenses.map((temp)=>{
-            return( <ExpenceItem title = {temp.title}
+            return(<Card> <ExpenceItem title = {temp.title}
             amount = {temp.amount}
             location = {temp.location}
             date = {temp.date}
             >
 
-            </ExpenceItem>  )
+            </ExpenceItem>
+         
+            </Card>  )
 
 
            })
