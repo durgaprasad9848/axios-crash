@@ -5,14 +5,7 @@ import Card from "../UI/Card.js";
 import React, { useState } from "react";
 
 const ExpenseItem = (props) => {
-  const [title, setTitle] = useState(props.title);
-  const[ amount, setAmount] = useState(props.amount);
-
-  const clickHandler = () => {
-    setTitle("prasad");
-    setAmount('100$');
-    console.log(title);
-  };
+ 
 
   return (
     <Card className="expense-item">
@@ -21,11 +14,11 @@ const ExpenseItem = (props) => {
       </div>
 
       <ExpenseDetails
-        title={title}
-        amount={amount}
+        title={props.title}
+        amount={props.amount}
       ></ExpenseDetails>
 
-      <button onClick={clickHandler}>change title & amount</button>
+      <button >change  </button>
     </Card>
   );
 };
