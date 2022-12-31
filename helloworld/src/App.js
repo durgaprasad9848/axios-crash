@@ -35,11 +35,20 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) =>
+  {
+    console.log('in App.js');
+    console.log(expense);
+   
+
+
+  }
+
   return (
     <Card>
       <div className="App">
         <header className="App-header">
-          <NewExpense></NewExpense>
+          <NewExpense onAddExpense = {addExpenseHandler}></NewExpense>
 
           <>
             {expenses.map((temp) => {
