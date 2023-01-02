@@ -14,7 +14,7 @@ const ExpenseList = (props) =>{
   if (props.items.length === 1) {
       
     return(  
-        <ul className='"expenses-list'>
+        <ul className='expenses-list'>
         {props.items.map((temp) => {
                 return( 
                 <ExpenseItem
@@ -34,7 +34,7 @@ const ExpenseList = (props) =>{
         <h3 className='expense-list__fallback'>
         Only single Expense here. Please add more...
          </h3>
-         ;
+         
          </ul>
  
          );
