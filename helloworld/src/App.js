@@ -37,12 +37,6 @@ const App = () => {
     setExpense((prevExpense)=>[expense,...prevExpense]);
   };
 
-  // return React.createElement(
-  //   'div',
-  //   {},
-  //   React.createElement('h2', {}, "Let's get started!"),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
 
   return (
     <div>
